@@ -14,6 +14,7 @@ from ..services import (
 )
 from ..frameworks import fastapi_framework
 from ..instances import (
+    g4dnxlarge_instance,
     g5d2xlarge_instance,
     g5d4xlarge_instance,
     g5d8xlarge_instance,
@@ -21,6 +22,8 @@ from ..instances import (
     g5d16xlarge_instance,
     g5d24xlarge_instance,
     g5d48xlarge_instance,
+    g6dxlarge_instance,
+    g6exlarge_instance,
     g6e2xlarge_instance,
     g6e12xlarge_instance,
     g6e24xlarge_instance,
@@ -152,6 +155,7 @@ Model.register(
         model_id = "Qwen2.5-VL-3B-Instruct",
         supported_engines=[vllm_qwen25vl72b_engine073],
         supported_instances=[
+            g4dnxlarge_instance,
             g5d2xlarge_instance,
             g5d4xlarge_instance,
             g5d8xlarge_instance,
@@ -159,6 +163,8 @@ Model.register(
             g5d16xlarge_instance,
             g5d24xlarge_instance,
             g5d48xlarge_instance,
+            g6dxlarge_instance,
+            g6exlarge_instance,
             g6e2xlarge_instance,
             local_instance
         ],
